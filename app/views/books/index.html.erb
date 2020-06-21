@@ -9,17 +9,16 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>リーダーブルコード</td>
-			<td>より良いコードを書くためのシンプルで実践的なテクニック</td>
-			<td><%= link_to "Show" , book_path %></td>
-			<td><%= link_to "Edit" , edit_book_path %></td>
-			<td><%= link_to "Destroy" , book_path %></td>
 
-		</tr>
 		<tr>
-			<td>トラブル知らずのシステム設計</td>
-			<td>システム設計の要点を図解で説明してくれます</td>
+			<% @books.each do |book| %>
+				<td><%= @book.title%></td>
+				<td><%= @book.body%></td>
+			<% end %>
+			<td><%= link_to "Show" , book_path(book) %></td>
+			<td><%= link_to "Edit" , edit_book_path(book) %></td>
+			<td><%= link_to "Destroy" , books_path %></td>
+
 		</tr>
 
 
