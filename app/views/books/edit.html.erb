@@ -11,19 +11,20 @@
 
 
 <%= form_for(@book) do |f| %>
-
-	<h4>Title</h4>
+<div class="form-title">
+	<%= f.label :title %>
 	<%= f.text_field :title %>
-
-	<h4>Body</h4>
+</div>
+<div class="form-body">
+	<%= f.label :body %>
 	<%= f.text_area :body %>
+</div>
+	<div class="btn"><%= f.submit "Update Book" %></div>
 
-	<%= f.submit "Update Book" %>
 
-
-
+<div class="link">
 <%= link_to "show", book_path(@book.id) %>
 |
 <%= link_to "Back", books_path %>
-
+</div>
 <% end %>

@@ -47,3 +47,59 @@ p {
 	font-family: verdana, arial, helvetica, sans-serif;
 }
 
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+
+th {
+	padding-bottom: 5px;
+	vertical-align: inherit;
+	font-weight: bold;
+	text-align: -inherit-center;
+}
+
+table {
+	display: table;
+	border-collapse: separate;
+	box-sizing: border-box;
+	border-spacing: 2px;
+}
+
+td {
+	/*display: block;*/
+}
+
+.link {
+	display: block;
+}
+
+.btn {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.form-title {
+	margin-bottom: 15px;
+}
+
+.form-body {
+	margin-bottom: 15px;
+}
+
+.table-title {
+	padding-right: 340px;
+}
+
+.table-link {
+	padding: 0 8px;
+}
+
+.new-title {
+	margin: 20px 0;
+}
+
+label {
+	display: block;
+}
